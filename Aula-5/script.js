@@ -9,3 +9,7 @@ let test = {
 }
 
 test.say;
+
+let array = ['Emerson', 'Rodigues']
+
+console.log(array.join(' '))
