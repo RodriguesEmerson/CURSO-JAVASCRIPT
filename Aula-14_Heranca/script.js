@@ -46,4 +46,19 @@ const camiseta = new Camiseta('Regata', 80);
 
 //Usa o método 'aumento' que está no prototype.
 camiseta.aumento (10)
-console.log(camiseta)
+// console.log(camiseta)
+
+
+function Caneca(nome, preco, material){
+    Produto.call(this, nome, preco);
+    this.material = material;
+}
+
+Caneca.prototype = Object.create(Produto.prototype);
+
+Caneca.prototype.constructor = Caneca;
+
+const primeiraCaneca = new Caneca('Caneca1', 25, 'Plástico');
+primeiraCaneca.aumento(100);
+
+console.log(primeiraCaneca)
