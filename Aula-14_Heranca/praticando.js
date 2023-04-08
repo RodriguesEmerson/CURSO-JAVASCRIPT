@@ -44,3 +44,9 @@ Add.prototype.constructor = Add;
 const conta1 = new Add(12, 12);
 conta1.adicao();
 console.log(conta1)
+
+
+
+/**OBS: Na minha opinião, acho que este .call faz a mesma função do 'super' em classes quando estão herdando 
+ * outra classe através do 'extends', com a diferença que é preciso passar o 'this' como primeiro argumento.
+ */
